@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="3.8" method="upgrade">
+	<name>Crowdfunding Data Package</name>
+	<packagename>crowdfundingdata</packagename>
+	<author>Todor Iliev</author>
+    <authorEmail>todor@itprism.com</authorEmail>
+    <authorUrl>http://itprism.com</authorUrl>
+    <copyright>Copyright (C) 2017 Todor Iliev ( ITPrism.com )</copyright>
+    <license>http://www.gnu.org/licenses/gpl-3.0.en.html GNU/GPLv3</license>
+    <version>2.4.2</version>
+    <creationDate>03 December, 2017</creationDate>
+    <url>http://itprism.com</url>
+	<packager>Todor Iliev</packager>
+	<packagerurl>http://itprism.com</packagerurl>
+	<description><![CDATA[
+	<p>Crowdfunding Data is a Joomla! extension that collects data from users during the process of payment.</p>
+	<p><a href="http://itprism.com/" target="_blank">Subscribe for the newsletter</a> to receive <strong>gifts</strong>, <strong>discount codes</strong>, information about <strong>updates</strong> and information about <strong>new ITPrism extensions</strong>.</p>
+	<p>Please, <a href="http://extensions.joomla.org/extensions/extension/e-commerce/donations/crowdfunding" target="_blank">vote for the extension</a> on Joomla! Extensions Directory</p>
+	]]></description>
+	
+	<files folder="packages">
+		<file type="component" 	id="com_crowdfundingdata" >com_crowdfundingdata.zip</file>
+		<file type="library" 	id="lib_crowdfundingdata" >lib_crowdfundingdata.zip</file>
+
+        <file type="plugin" id="data" group="crowdfundingpayment">plg_crowdfundingpayment_data.zip</file>
+	</files>
+
+	<scriptfile>install.php</scriptfile>
+
+	<updateservers>
+		<server type="extension" priority="1" name="Package - Crowdfunding Data">http://cdn.itprism.com/updates/crowdfunding/packages/pkg_crowdfundingdata.xml</server>
+	</updateservers>
+</extension>
